@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Profile Form</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom Cs -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4 mx-auto form-box">
+
+        <h2 class="text-center mb-4">
+            <i class="fas fa-user-circle"></i> Personal Profile Form
+        </h2>
+
+        <form action="ProfileServlet" method="POST">
+
+            <!-- Name -->
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-user"></i> Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Student ID -->
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-id-card"></i> Student ID</label>
+                <input type="text" name="studentId" class="form-control" placeholder="Enter student ID" required>
+            </div>
+
+            <!-- Program -->
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-graduation-cap"></i> Program</label>
+                <input type="text" name="program" class="form-control" placeholder="Enter program">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter email">
+            </div>
+
+            <!-- Hobbies -->
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-gamepad"></i> Hobbies</label>
+                <input type="text" name="hobbies" class="form-control" placeholder="Your hobbies">
+            </div>
+
+            <!-- Intro -->
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-comment"></i> Introduction</label>
+                <textarea name="intro" class="form-control" rows="4" placeholder="Write about yourself"></textarea>
+            </div>
+
+            <!-- Button -->
+            <button type="submit" class="btn btn-primary w-100">
+                <i class="fas fa-paper-plane"></i> Submit
+            </button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
